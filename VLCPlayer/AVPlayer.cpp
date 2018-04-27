@@ -60,7 +60,7 @@ bool CAVPlayer::Play(const std::string &strPath)
 	{
 		if (m_pVLC_Player = libvlc_media_player_new_from_media(m))
 		{
-			libvlc_media_player_play(m_pVLC_Player);
+			//libvlc_media_player_play(m_pVLC_Player);
 			// 事件管理
 			libvlc_event_manager_t *vlc_evt_man = libvlc_media_player_event_manager(m_pVLC_Player);
 			libvlc_event_attach(vlc_evt_man, libvlc_MediaPlayerPositionChanged, ::OnVLC_PositionChanged, this);
