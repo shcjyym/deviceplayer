@@ -252,6 +252,7 @@ void CAVPlayer::SetTime(int time)
 		if (time > 0 && time < total_time)
 		{
 			libvlc_media_player_set_time(m_pVLC_Player, time);
+			//libvlc_set_fullscreen(m_pVLC_Player, 1);
 		}
 	}
 }
